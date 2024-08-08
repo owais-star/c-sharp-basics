@@ -134,3 +134,46 @@ for (int counter1 = 0; counter1 < 10; counter1++)
     Console.WriteLine($"Hello World! The counter is {counter1}");
 }
 
+// scopes
+{
+    const int let = 5;
+    byte number = 0;
+
+    if (number == 3)
+    {
+        Console.WriteLine("The number is not set");
+    }
+    else
+    {
+        Console.WriteLine($"The number is {number}");
+    }
+}
+
+
+namespace Variables
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            const int totalNumbers = 1200;
+
+            string name = "Bob";
+            int age = 30;
+            bool isRaining = true;
+            double height = 1.85;
+            decimal price = 29.99m;
+
+            var name1 = "Bob";
+            var age1 = 30;
+            var isRaining1 = true;
+
+            Console.WriteLine(name);
+            Console.WriteLine(age);
+            Console.WriteLine(isRaining);
+            Console.WriteLine(height);
+            Console.WriteLine(price);
+            Console.WriteLine("{0} {1}", name, name1);
+        }
+    }
+}
